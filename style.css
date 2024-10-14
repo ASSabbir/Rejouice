@@ -1,0 +1,22 @@
+@font-face {
+    font-family: nb;
+    src: url(./NBInternationalProBoo.ttf);
+}
+@font-face {
+    font-family: rejoy;
+    src: url(./Rejouice-Headline.ttf);
+}
+*{
+    font-family: nb;
+}
+#rijoy {
+    display: flex;
+    line-height: 20vw;
+}
+#rijoy span{
+    font-family: rejoy;
+    
+}
+.headingTile span{
+    display: inline-block;
+}
