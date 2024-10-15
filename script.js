@@ -146,6 +146,39 @@ const navberDesign = () => {
 
     })
 }
+const page2=()=>{
+    gsap.to('.page2 hr',{
+        width:'100%',
+        duration:2,
+        scrollTrigger:{
+            trigger:'#text-black',
+            scrub:1,
+            start:'top 80%',
+        }
+    })
+    gsap.from('#TomorrowBrand h1',{
+        y:20,
+        opacity:0,
+        duration:1,
+        scrollTrigger:{
+            trigger:'#text-black',
+            
+            start:'top 80%',
+        }
+    })
+    gsap.to('#text-black',{
+        width:'100%',
+        
+        scrollTrigger:{
+            trigger:'#text-black',
+            
+            scrub:1,
+            start:'top 60%',
+            end:'top 0%'
+        }
+    })
+}
 navberDesign()
 // locomotive()
 curser()
+page2()
