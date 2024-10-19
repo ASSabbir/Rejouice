@@ -24,29 +24,59 @@ const curser=()=>{
     
         })
     })
-    gsap.from('#menu',{
+    const tl=gsap.timeline()
+    tl.from('.loader h1',{
+        x:50,
+        opacity:0,
+        stagger:0.1,
+        duration:0.8
+    })
+    tl.to('.loader h1',{
+        x:-20,
+        opacity:0,
+        stagger:0.1,
+        delay:0.2
+    })
+    tl.to('.loader',{
+        opacity:0,
+        duration:0.5
+    })
+    tl.to('.loader',{
+        display:'none',
+        duration:0.1
+    })
+    tl.from('#menu',{
         x:100,
         opacity:0,
         ease: "power1.out",
-        duration:1,
-        delay:0.2,
+        duration:0.5,
+        
     })
-    gsap.from('#rijoy span',{
+    tl.from('#rijoy span',{
         y:200,
         stagger:0.1,
         opacity:0
-    })
-    gsap.from('.headingTile span',{
+    },"-=0.5")
+    tl.from('.headingTile span',{
         x:50,
         duration:1,
         delay:0.2,
         stagger:0.1,
         opacity:0
-    })
+    },"-=1.4")
     gsap.from('.page1 video',{
         opacity:0,
         duration:4,
         
+    })
+    gsap.from('#rijoyFooter span',{
+        y:100,
+        stagger:0.1,
+        opacity:0,
+        scrollTrigger:{
+            trigger:'#footerTrigger',
+            start:'top 10%'
+        }
     })
 }
 const navberDesign = () => {
@@ -162,4 +192,5 @@ navberDesign()
 curser()
 page2('.page2','#text-black','#TomorrowBrand')
 page2('.page5','#text-black2','#partner')
+page2('.page7','#text-black3','#Strategy')
 events()

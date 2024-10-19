@@ -17,6 +17,14 @@
     font-family: rejoy;
     
 }
+#rijoyFooter{
+    display: flex;
+    line-height: 20vw;
+}
+#rijoyFooter span{
+    font-family: rejoy;
+    
+}
 .headingTile span{
     display: inline-block;
 }
@@ -64,3 +72,7 @@
     z-index: 20;
     object-fit: cover;
 } */
+ .page6 svg{
+    position: absolute;
+    width: 35vw;
+ }
