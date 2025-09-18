@@ -16,7 +16,7 @@ It showcases smooth animations and a clean responsive design, delivering a dynam
 - [Usage](#-usage)  
 - [Features](#-features)  
 - [Technologies](#-technologies)  
-- [License](#-license)  
+
 
 ---
 
@@ -32,3 +32,12 @@ It showcases smooth animations and a clean responsive design, delivering a dynam
 - Smooth, engaging animations powered by GSAP
 - Simple, fast-loading static website
 - Easy to customize
+
+---
+
+## 🔧 Technologies
+- HTML5
+- JavaScript (ES6+)
+- Tailwind CSS
+- GSAP (GreenSock Animation Platform)
+
