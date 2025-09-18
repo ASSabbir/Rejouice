@@ -119,6 +119,7 @@ const navberDesign = () => {
             x: -300
         })
 
+        
     })
     document.querySelector('#close').addEventListener('click', () => {
 
